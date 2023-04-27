@@ -84,26 +84,3 @@ export class SpendGraphicCardComponent implements OnInit {
     }
   }
 }
-
-interface MyChartData extends Chart<'bar', number[], string> {
-  data: {
-    labels: string[];
-    datasets: {
-      label: string;
-      data: number[];
-      backgroundColor: string;
-      borderColor: string;
-      borderWidth: number;
-      borderRadius: number;
-    }[];
-  };
-}
-enum WeekDay {
-  Monday,
-  Tuesday,
-  Wednesday,
-  Thursday,
-  Friday,
-  Saturday,
-  Sunday
-}
